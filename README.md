@@ -1,4 +1,4 @@
-# Rocokingdom-shiny-egg-probability-simulator
+# how-unlucky-am-i
 A Monte Carlo simulation project for estimating rare shiny egg probabilities using Python.
 # Shiny Egg Probability Simulator
 
