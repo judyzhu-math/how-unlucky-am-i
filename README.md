@@ -34,10 +34,7 @@ The total number of eggs is:
 ## What this project does
 This project calculates the probability of getting zero shiny / rare-colored eggs after 290 eggs.
 
-It uses two methods:
-
-Exact mathematical calculation
-Monte Carlo simulation
+It uses two methods: Exact mathematical calculation and Monte Carlo simulation.
 
 The exact formula is:
 
