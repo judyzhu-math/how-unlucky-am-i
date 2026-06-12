@@ -23,9 +23,9 @@ So each egg has a 0.3% chance of becoming shiny or rare-colored.
 ## Egg schedule
 My egg production was not the same every day.
 
-Days 1-10: 2 eggs per day
-Days 11-20: 3 eggs per day
-Days 21-60: 6 eggs per day
+Days 1-10: 2 eggs per day;
+Days 11-20: 3 eggs per day;
+Days 21-60: 6 eggs per day.
 
 The total number of eggs is:
 
