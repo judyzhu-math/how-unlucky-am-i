@@ -1,8 +1,5 @@
 # how-unlucky-am-i
-A Monte Carlo simulation project for estimating rare shiny egg probabilities using Python.
-# Shiny Egg Probability Simulator
-
-This project uses Monte Carlo simulation to estimate the probability of getting at least one rare shiny egg in a game named Rocokingdom.
+A Monte Carlo simulation project for estimating rare shiny egg probabilities in Roco Kingdom (a mobile game) using Python.
 
 ## Background
 In Rock Kingdom, players can place pet nests in their home. When two pets of the same species are placed together, they may produce an egg. These eggs have a small chance of becoming a shiny egg, an alternate-color egg, or even a shiny alternate-color egg.
