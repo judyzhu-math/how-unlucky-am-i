@@ -8,7 +8,7 @@ I placed ten pet nests in my home(which is the maximum each player could place i
 
 How unlucky am I, mathematically?
 
-According to the breeding mechanism I use in this project:
+According to the official breeding mechanism I use in this project:
 
 The base probability of getting a shiny / rare-colored egg is assumed to be 0.1%.
 Since all of my male breeding pets are rare-colored, I use a parent multiplier of 3.
