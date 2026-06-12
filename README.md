@@ -55,5 +55,10 @@ This means my result is unlucky, but still statistically possible.
 In other words, I am suffering, but the math says this suffering is allowed.
 
 ## My egg nests
-Here are my egg nests in Roco Kingdom:
-![My egg nests](images/egg_nests.png)
+These are my egg nests in Rock Kingdom. They have been working for two months, but the shiny eggs are still missing.
+
+![First group of egg nests](images/egg_nests_1.png)
+
+![Second group of egg nests](images/egg_nests_2.png)
+
+![Third group of egg nests](images/egg_nests_3.png)
