@@ -11,19 +11,49 @@ I placed ten pet nests in my home(which is the maximum each player could place i
 
 How unlucky am I, mathematically?
 
-## Project Goal
+According to the breeding mechanism I use in this project:
 
-This project uses Monte Carlo simulation to estimate the probability of getting rare eggs in Rock Kingdom. The goal is to compare my actual experience with simulated outcomes and understand whether my bad luck is statistically normal or truly cursed.
+The base probability of getting a shiny / rare-colored egg is assumed to be 0.1%.
+Since all of my male breeding pets are rare-colored, I use a parent multiplier of 3.
+Therefore, the actual probability per egg is:
+0.1% × 3 = 0.3%
 
-## Methods
+So each egg has a 0.3% chance of becoming shiny or rare-colored.
 
-- Bernoulli trials
-- Binomial probability
-- Monte Carlo simulation
-- Python visualization
+## Egg schedule
+My egg production was not the same every day.
 
-## Tools
+Days 1-10: 2 eggs per day
+Days 11-20: 3 eggs per day
+Days 21-60: 6 eggs per day
 
-- Python
-- NumPy
-- Matplotlib
+The total number of eggs is:
+
+10 × 2 + 10 × 3 + 40 × 6 = 290 eggs
+
+## What this project does
+This project calculates the probability of getting zero shiny / rare-colored eggs after 290 eggs.
+
+It uses two methods:
+
+Exact mathematical calculation
+Monte Carlo simulation
+
+The exact formula is:
+
+(1 - 0.003)^290
+
+The Monte Carlo simulation repeats the egg-breeding experiment many times. For example, it can simulate 10,000 players, where each player hatches 290 eggs. Then it estimates how often a player gets zero shiny / rare-colored eggs.
+
+## Results
+With an actual probability of 0.3% per egg, the probability of getting zero shiny / rare-colored eggs after 290 eggs is about:
+
+41.84%
+
+This means my result is unlucky, but still statistically possible.
+
+In other words, I am suffering, but the math says this suffering is allowed.
+
+## My egg nests
+Here are my egg nests in Roco Kingdom:
+![My egg nests](images/egg_nests.png)
