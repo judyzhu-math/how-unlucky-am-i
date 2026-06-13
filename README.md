@@ -24,18 +24,18 @@ My egg production was not the same every day.
 ```text
 Days 1-10: 2 eggs per day
 Days 11-20: 3 eggs per day
-Days 21-60: 6 eggs per day
+Days 21-60: 5 eggs per day
 ```
 
 The total number of eggs is:
 
 ```text
-10 × 2 + 10 × 3 + 40 × 6 = 290 eggs
+10 × 2 + 10 × 3 + 40 × 5 = 250 eggs
 ```
 
 ## What This Project Does
 
-This project calculates the probability of getting zero shiny / rare-colored eggs after 290 eggs.
+This project calculates the probability of getting zero shiny / rare-colored eggs after 250 eggs.
 
 It uses two methods:
 
@@ -63,8 +63,8 @@ Actual rate per egg: 0.001 × 3 = 0.003 = 0.3%
 Under this assumption:
 
 ```text
-Probability of getting zero special eggs after 290 eggs ≈ 41.84%
-Probability of getting at least one special egg ≈ 58.16%
+Probability of getting zero special eggs after 250 eggs ≈ 47.18%
+Probability of getting at least one special egg ≈ 52.82%
 ```
 
 This means getting zero shiny / rare-colored eggs is unlucky, but still very possible.
@@ -80,11 +80,11 @@ Actual rate per egg: 0.0099 × 3 = 0.0297 = 2.97%
 Under this assumption:
 
 ```text
-Probability of getting zero special eggs after 290 eggs ≈ 0.0160%
-Probability of getting at least one special egg ≈ 99.9840%
+Probability of getting zero special eggs after 250 eggs ≈ 0.0533%
+Probability of getting at least one special egg ≈ 99.9467%
 ```
 
-This means that if the real base rate is close to 1%, then getting zero special eggs after 290 eggs would be extremely unlucky.
+This means that if the real base rate is close to 1%, then getting zero special eggs after 250 eggs would be extremely unlucky.
 
 ## Psychological Pity Table
 
@@ -110,7 +110,7 @@ There is no real guaranteed pity unless the game has a built-in pity system. The
 99% chance of at least one special egg: 153 eggs
 ```
 
-Under the high-rate assumption, 290 eggs is already far beyond the 99% psychological pity line.
+Under the high-rate assumption, 250 eggs is already far beyond the 99% psychological pity line.
 
 ## My egg nests
 These are my egg nests in Rock Kingdom. They have been working for two months, but the shiny eggs are still missing.
