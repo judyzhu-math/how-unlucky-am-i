@@ -8,12 +8,12 @@ def calculate_total_eggs():
 
     Days 1-10: 2 eggs per day
     Days 11-20: 3 eggs per day
-    Days 21-60: 6 eggs per day
+    Days 21-60: 5 eggs per day
     """
 
     eggs_first_10_days = 10 * 2
     eggs_next_10_days = 10 * 3
-    eggs_last_40_days = 40 * 6
+    eggs_last_40_days = 40 * 5
 
     total_eggs = eggs_first_10_days + eggs_next_10_days + eggs_last_40_days
 
