@@ -1,4 +1,4 @@
-# how-unlucky-am-i
+# how-unlucky-am-i😠
 A Monte Carlo simulation project for estimating rare shiny egg probabilities in Roco Kingdom (a mobile game) using Python.
 
 ## Background
@@ -6,7 +6,7 @@ In Rock Kingdom, players can place pet nests in their home. When two pets of the
 
 I placed ten pet nests in my home(which is the maximum each player could place in their home) and played for about two months, but I still did not get a single shiny or alternate-color egg. Out of frustration and curiosity, I decided to use probability and Python simulation to answer the question:
 
-How unlucky am I, mathematically?
+How unlucky am I, mathematically?☹️
 
 The exact base probability is unknown. The source only says that the normal rate is below 1%.
 
@@ -50,21 +50,22 @@ Probability of zero special eggs = (1 - actual_rate)^total_eggs
 
 The Monte Carlo simulation repeats the egg-breeding experiment many times. For example, it can simulate 10,000 players, where each player hatches 290 eggs. Then it estimates how often a player gets zero shiny / rare-colored eggs.
 
-## Probability Assumptions
+For detailed probability calculations, see [probability_notes.md](probability_notes.md).
+
+## Results Summary
 
 ### Case 1: Conservative Assumption
 
 ```text
-Base rate: 0.1% = 0.001
+Base rate: 0.1%
 Parent multiplier: 3x
-Actual rate per egg: 0.001 × 3 = 0.003 = 0.3%
+Actual rate per egg: 0.3%
 ```
 
-Under this assumption:
+Under this assumption, the probability of getting zero special eggs after 250 eggs is about:
 
 ```text
-Probability of getting zero special eggs after 250 eggs ≈ 47.18%
-Probability of getting at least one special egg ≈ 52.82%
+47.18%
 ```
 
 This means getting zero shiny / rare-colored eggs is unlucky, but still very possible.
@@ -72,45 +73,18 @@ This means getting zero shiny / rare-colored eggs is unlucky, but still very pos
 ### Case 2: High-Rate Assumption
 
 ```text
-Base rate: 0.99% = 0.0099
+Base rate: 0.99%
 Parent multiplier: 3x
-Actual rate per egg: 0.0099 × 3 = 0.0297 = 2.97%
+Actual rate per egg: 2.97%
 ```
 
-Under this assumption:
+Under this assumption, the probability of getting zero special eggs after 250 eggs is about:
 
 ```text
-Probability of getting zero special eggs after 250 eggs ≈ 0.0533%
-Probability of getting at least one special egg ≈ 99.9467%
+0.0533%
 ```
 
-This means that if the real base rate is close to 1%, then getting zero special eggs after 250 eggs would be extremely unlucky.
-
-## Psychological Pity Table
-
-There is no real guaranteed pity unless the game has a built-in pity system. These numbers only show how many eggs are needed to reach each probability level mathematically.
-
-### Conservative Assumption: Actual Rate = 0.3%
-
-```text
-50% chance of at least one special egg: 231 eggs
-80% chance of at least one special egg: 536 eggs
-90% chance of at least one special egg: 767 eggs
-95% chance of at least one special egg: 998 eggs
-99% chance of at least one special egg: 1533 eggs
-```
-
-### High-Rate Assumption: Actual Rate = 2.97%
-
-```text
-50% chance of at least one special egg: 23 eggs
-80% chance of at least one special egg: 54 eggs
-90% chance of at least one special egg: 77 eggs
-95% chance of at least one special egg: 100 eggs
-99% chance of at least one special egg: 153 eggs
-```
-
-Under the high-rate assumption, 250 eggs is already far beyond the 99% psychological pity line.
+This means that if the real base rate is close to 1%, then getting zero special eggs after 250 eggs is extremely unlucky😭😭.
 
 ## My egg nests
 These are my egg nests in Rock Kingdom. They have been working for two months, but the shiny eggs are still missing.
