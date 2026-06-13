@@ -171,7 +171,7 @@ if __name__ == "__main__":
     print("Egg schedule:")
     print("Days 1-10: 2 eggs per day")
     print("Days 11-20: 3 eggs per day")
-    print("Days 21-60: 6 eggs per day")
+    print("Days 21-60: 5 eggs per day")
     print()
 
     print("Note:")
