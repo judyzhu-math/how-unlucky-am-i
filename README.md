@@ -17,6 +17,12 @@ Because of this uncertainty, this project compares two assumptions:
 
 Since all of my male breeding pets are rare-colored, I use a parent multiplier of 3.
 
+## Update
+
+After about 250 eggs, I finally got one rare-colored egg and one shiny egg!✌️✌️
+
+The egg gods finally answered, but only after a long statistical silence. The simulator and the math things below can still work though!
+
 ## Egg Schedule
 
 My egg production was not the same every day.
