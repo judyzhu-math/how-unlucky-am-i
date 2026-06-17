@@ -4,15 +4,8 @@ import os
 import matplotlib.pyplot as plt
 
 
-
 def calculate_total_eggs():
-    """
-    Calculate the total number of eggs based on the real egg schedule.
-
-    Days 1-10: 2 eggs per day
-    Days 11-20: 3 eggs per day
-    Days 21-60: 5 eggs per day
-    """
+   
     eggs_first_10_days = 10 * 2
     eggs_next_10_days = 10 * 3
     eggs_last_40_days = 40 * 5
@@ -23,42 +16,25 @@ def calculate_total_eggs():
 
 
 def calculate_zero_probability(total_eggs, actual_rate):
-    """
-    Calculate the exact probability of getting zero special eggs.
-    """
+   
     zero_probability = (1 - actual_rate) ** total_eggs
     return zero_probability
 
 
 def calculate_at_least_one_probability(total_eggs, actual_rate):
-    """
-    Calculate the probability of getting at least one special egg.
-    """
+  
     at_least_one_probability = 1 - (1 - actual_rate) ** total_eggs
     return at_least_one_probability
 
 
 def eggs_needed_for_target_probability(target_probability, actual_rate):
-    """
-    Calculate how many eggs are needed to reach a target probability
-    of getting at least one special egg.
-
-    Formula:
-        1 - (1 - actual_rate) ** n >= target_probability
-
-    Rearranged:
-        n >= log(1 - target_probability) / log(1 - actual_rate)
-    """
+ 
     eggs_needed = math.log(1 - target_probability) / math.log(1 - actual_rate)
     return math.ceil(eggs_needed)
 
 
 def simulate_one_attempt(total_eggs, actual_rate):
-    """
-    Simulate one player's egg breeding result.
-
-    Return the number of special eggs after hatching total_eggs eggs.
-    """
+   
     special_eggs = 0
 
     for egg in range(total_eggs):
@@ -69,11 +45,7 @@ def simulate_one_attempt(total_eggs, actual_rate):
 
 
 def monte_carlo_results(trials, total_eggs, actual_rate):
-    """
-    Run many simulations and return all simulation results.
-
-    Each result is the number of special eggs obtained by one simulated player.
-    """
+   
     results = []
 
     for trial in range(trials):
@@ -84,9 +56,7 @@ def monte_carlo_results(trials, total_eggs, actual_rate):
 
 
 def estimate_zero_probability_from_results(results):
-    """
-    Estimate the probability of getting zero special eggs from simulation results.
-    """
+   
     zero_special_count = 0
 
     for result in results:
@@ -99,13 +69,7 @@ def estimate_zero_probability_from_results(results):
 
 
 def calculate_probabilities(base_rate, parent_multiplier, total_eggs):
-    """
-    Calculate theoretical probabilities for special egg results.
-
-    Returns:
-        probability_no_special: probability of getting zero special eggs
-        probability_at_least_one: probability of getting at least one special egg
-    """
+   
     actual_rate = base_rate * parent_multiplier
 
     probability_no_special = calculate_zero_probability(total_eggs, actual_rate)
@@ -115,9 +79,7 @@ def calculate_probabilities(base_rate, parent_multiplier, total_eggs):
 
 
 def count_distribution(results):
-    """
-    Count how many simulated players got 0, 1, 2, 3, ... special eggs.
-    """
+   
     distribution = {}
 
     for result in results:
@@ -130,9 +92,7 @@ def count_distribution(results):
 
 
 def plot_probability_comparison(total_eggs, parent_multiplier):
-    """
-    Plot probability comparison between two rate assumptions.
-    """
+   
     case_names = [
         "Conservative\n0.1%",
         "High-rate\n0.99%"
@@ -177,14 +137,13 @@ def plot_probability_comparison(total_eggs, parent_multiplier):
     plt.legend()
     plt.tight_layout()
 
-    os.plt.savefig("images/probability_comparison.png")
+    os.makedirs("images", exist_ok=True)
+    plt.savefig("images/probability_comparison.png")
     plt.show()
 
 
 def plot_monte_carlo_distribution(results, case_name):
-    """
-    Plot the distribution of special eggs from Monte Carlo simulation.
-    """
+   
     distribution = count_distribution(results)
 
     special_egg_numbers = sorted(distribution.keys())
@@ -203,17 +162,13 @@ def plot_monte_carlo_distribution(results, case_name):
     plt.xticks(special_egg_numbers)
     plt.tight_layout()
 
-    os.plt.savefig("images/monte_carlo_distribution.png")
+    os.makedirs("images", exist_ok=True)
+    plt.savefig("images/monte_carlo_distribution.png")
     plt.show()
 
 
 def print_case_result(case_name, base_rate, parent_multiplier, total_eggs, trials):
-    """
-    Print the probability results for one probability assumption.
-
-    Returns:
-        results: Monte Carlo simulation results for this case
-    """
+   
     actual_rate = base_rate * parent_multiplier
 
     zero_probability = calculate_zero_probability(total_eggs, actual_rate)
