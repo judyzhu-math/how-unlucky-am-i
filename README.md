@@ -92,6 +92,22 @@ Under this assumption, the probability of getting zero special eggs after 250 eg
 
 This means that if the real base rate is close to 1%, then getting zero special eggs after 250 eggs is extremely unlucky😭😭.
 
+## Results
+
+The program generates two visualizations.
+
+### Probability Comparison
+
+This chart compares two assumptions for the base probability of getting a special egg.
+
+![Probability comparison](images/probability_comparison.png)
+
+### Monte Carlo Distribution
+
+This chart shows how many special eggs were obtained by 10,000 simulated players under the conservative assumption.
+
+![Monte Carlo distribution](images/monte_carlo_distribution.png)
+
 ## My egg nests
 These are my egg nests in Rock Kingdom. They have been working for two months, but the shiny eggs are still missing.
 
