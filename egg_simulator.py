@@ -1,6 +1,8 @@
 import random
 import math
+import os
 import matplotlib.pyplot as plt
+
 
 
 def calculate_total_eggs():
@@ -175,7 +177,7 @@ def plot_probability_comparison(total_eggs, parent_multiplier):
     plt.legend()
     plt.tight_layout()
 
-    plt.savefig("images/probability_comparison.png")
+    os.plt.savefig("images/probability_comparison.png")
     plt.show()
 
 
@@ -201,7 +203,7 @@ def plot_monte_carlo_distribution(results, case_name):
     plt.xticks(special_egg_numbers)
     plt.tight_layout()
 
-    plt.savefig("images/monte_carlo_distribution.png")
+    os.plt.savefig("images/monte_carlo_distribution.png")
     plt.show()
 
 
